@@ -1,0 +1,12 @@
+@mixin boton-comprar-card{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #4169e1 !important; 
+	color: white;
+	margin-top: 15px;
+	&:hover{
+		transition: 0.5s ease;
+		background-color: #1a3da5 !important; 
+	}
+}
