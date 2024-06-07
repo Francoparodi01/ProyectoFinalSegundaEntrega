@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combos actualización</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Componentes de computadoras</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 </head>
 <body class="body">
-    <div class="top-bar">
-        <div class="item-cont">
-            <div class="item">
-                <a href="#"><img class="nvidia" src="./assets/nvidia.png" alt="nvidia"></a>
-            </div> 
-            <div class="item">
-                <a href="#"><img class="logitech" src="./assets/logitech.png" alt="Logitech"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="amd"src="./assets/amd.png" alt="amd"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="intel" src="./assets/intel.png" alt="intel"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img class="" src="" alt=""></a>
-            </div>
-        </div>
-        <div class="text-cont">
-            <div class="telefono">
-                <img class="icono-tel" src="assets/phone.png" alt="Icono telefono">
-                <span>(011)4734-3252</span>
-            </div>
-            <div class="text-cont">
-                <span>ventasFrancoparodi@gmail.com</span>
-                <img class="sobre" src="./assets/sobre-icon.png" alt="Icono sobre">
-            </div>
-        </div>
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="item-cont">
+      <div class="item">
+        <a href="#"><img class="nvidia" src="./assets/nvidia.png" alt="nvidia" /></a>
+      </div>
+      <div class="item">
+        <a href="#"><img class="logitech" src="./assets/logitech.png" alt="Logitech" /></a>
+      </div>
+      <div class="item">
+        <a href="#"><img class="amd" src="./assets/amd.png" alt="amd" /></a>
+      </div>
+      <div class="item">
+        <a href="#"><img class="intel" src="./assets/intel.png" alt="intel" /></a>
+      </div>
+      <div class="item">
+        <a href="#"><img class="" src="" alt="" /></a>
+      </div>
     </div>
-    <div class="busqueda-cont">
-        <div><a class="d-flex align-items-center " href="index.html">home</a></div>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <form class="d-flex">
-                    <input class="search-head me-2" id="barra-busqueda" type="search" placeholder="Buscar productos" aria-label="Search">
-                </form>
-            </div>
-        </nav>
-        <button class="boton-login">
-            <img class="profile-png" src="./assets/profile.png">
-            <span class="log-in"> iniciar sesión </span>
-        </button>
-        <div class="carrito-cont">
-            <a href="carrito.html"><img class="carrito-png" src="./assets/carrito.png"></a>
-        </div>
+    <div class="text-cont">
+      <div class="telefono">
+        <img class="icono-tel" src="assets/phone.png" alt="Icono telefono" />
+        <span>(011)4734-3252</span>
+      </div>
+      <div class="text-cont">
+        <span>ventasFrancoparodi@gmail.com</span>
+        <img class="sobre" src="./assets/sobre-icon.png" alt="Icono sobre" />
+      </div>
     </div>
-    <div class="menu-conte">
-        <div class="menu">
-            <nav class="nav-menu">
-                <a href="" id="a-menu" class="nav-link">Productos</a>
-                <a href="" id="a-menu" class="nav-link">Armá tu pc</a>
-                <a href="combos.html" id="a-menu" class="nav-link">Combos actualización</a>
-                <a href="" id="a-menu" class="nav-link">Ayuda</a>
-            </nav>
-        </div>
-    </div>
-	<div class="container ms-2 px-2 mt-2">
-		<div class="mb-3 p-2">
-			<select id="filtro-marca">
-				<option value="intel">Intel</option>
-				<option value="amd">AMD (Procesadores)</option>
-				<option value="nvidia">Nvidia</option>
-				<option value="amd_gpu">AMD (Tarjetas Gráficas)</option>
-			</select>
-		</div>
-		<div class="row" id="products">
-		</div>
-	</div>
+  </div>
 
+  <!-- Search bar -->
+  <div class="busqueda-cont">
+    <div><a class="d-flex align-items-center" href="index.html">home</a></div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <form class="d-flex">
+          <input class="search-head me-2" id="barra-busqueda" type="search" placeholder="Buscar productos" aria-label="Search" />
+        </form>
+      </div>
+    </nav>
+    <button class="boton-login">
+      <img class="profile-png" src="./assets/profile.png" alt="Icono perfil" />
+      <span class="log-in"> iniciar sesión </span>
+    </button>
+    <div class="carrito-cont">
+      <a href="carrito.html"><img class="carrito-png" src="./assets/carrito.png" alt="Icono carrito" /></a>
+    </div>
+  </div>
+
+  <!-- Navigation menu -->
+  <div class="menu-conte">
+    <div class="menu">
+      <nav class="nav-menu">
+        <a href="#" class="nav-link">Productos</a>
+        <a href="#" class="nav-link">Armá tu pc</a>
+        <a href="combos.html" class="nav-link">Combos actualización</a>
+        <a href="#" class="nav-link">Ayuda</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Processor container -->
+  <div class="container ms-2 px-2 mt-2">
+    <div class="mb-3 p-2">
+      <select id="filtro-marca-procesadores">
+        <option value="intel">Intel</option>
+        <option value="amd">AMD</option>
+      </select>
+    </div>
+    <div class="row" id="procesadores"></div>
+  </div>
+
+  <!-- Graphics card container -->
+  <div class="container ms-2 px-2 mt-2">
+    <div class="mb-3 p-2">
+      <select id="filtro-marca-gpus">
+        <option value="nvidia">Nvidia</option>
+        <option value="amd_gpu">AMD</option>
+      </select>
+    </div>
+    <div class="row" id="gpus"></div>
+  </div>
+
+  <!-- Article -->
+  <div class="contenedor-article">
+    <h3>¿Estás pensando en comprar un procesador? ¿Intel o AMD?</h3>
+    <article>
+      Si estás en la búsqueda del procesador perfecto para tu próxima construcción de PC o actualización, es probable que te encuentres con la eterna pregunta: ¿Intel o AMD? Ambas marcas ofrecen una amplia gama de opciones con diferentes características y precios, lo que puede hacer que la elección sea un desafío. Aquí hay algunos puntos clave a considerar al decidir entre Intel y AMD: Rendimiento y precio: AMD tiende a ofrecer un mejor valor en términos de rendimiento por el precio, lo que puede ser atractivo para aquellos con presupuestos ajustados o que buscan obtener el máximo rendimiento por su dinero. Por otro lado, Intel a menudo se destaca en áreas específicas de rendimiento, especialmente en aplicaciones que requieren un alto rendimiento de núcleo único. Compatibilidad y preferencia personal: Algunos usuarios pueden tener preferencia por una marca sobre la otra debido a experiencias pasadas, lealtad a la marca o compatibilidad con otros componentes de hardware. Soporte de software y optimización: Dependiendo de las aplicaciones y software que planees utilizar, puede haber diferencias en el rendimiento y la compatibilidad entre los procesadores Intel y AMD. Algunos programas pueden estar optimizados específicamente para una marca u ofrecer un mejor rendimiento en un tipo de procesador sobre el otro. Consumo de energía y temperaturas: Los procesadores Intel y AMD pueden variar en términos de consumo de energía y temperaturas de funcionamiento. Dependiendo de tus necesidades y preferencias, es posible que desees considerar cómo estos factores afectarán el rendimiento y la eficiencia de tu sistema. En última instancia, la mejor opción entre Intel y AMD dependerá de tus necesidades individuales, presupuesto y preferencias personales. Te recomendamos investigar y comparar diferentes modelos de procesadores para encontrar el que mejor se adapte a tus necesidades específicas.
+    </article>
+  </div>
 
     <script src="index.js"></script>
-    <script src="stock.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
