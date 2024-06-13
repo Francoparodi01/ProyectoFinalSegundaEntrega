@@ -176,50 +176,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     renderCarrito();
-    
-    // Escuchar el evento input del campo de búsqueda
-    const botonBusqueda = document.querySelector('.boton-busqueda');
-    botonBusqueda.addEventListener('input', () => {
-        const searchTerm = botonBusqueda.value.trim().toLowerCase();
-    
-        if (searchTerm === 'amd') {
-            agregarProcesadores(procesadoresAMD);
-        } else if (searchTerm === 'intel') {
-            agregarProcesadores(procesadoresIntel);
-        } else {
-            // Limpiar el contenedor de procesadores si no es "amd" ni "intel"
-            limpiarProcesadores();
-        }
-    });
-    
-    // Función para agregar procesadores al contenedor existente
-    function agregarProcesadores(procesadores) {
-        const container = document.getElementById("procesadores");
-        procesadores.forEach(procesador => {
-            const card = `
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">${procesador.nombre}</h5>
-                            <p class="card-text">Precio: $${procesador.precio}</p>
-                            <p class="card-text">Núcleos: ${procesador.nucleos}</p>
-                            <img class="producto-imagen" src="${procesador.imagen}" alt="${procesador.nombre}">
-                            <button class="btn btn-primary agregar-carrito" data-id="${procesador.id}">Agregar al carrito</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-            container.innerHTML += card;
-        });
-    }
-    
-    // Función para limpiar el contenedor de procesadores
-    function limpiarProcesadores() {
-        const container = document.getElementById("procesadores");
-        container.innerHTML = "";
-    }
-    
-    // Renderizar inicialmente los procesadores de Intel
-    mostrarProcesadores(procesadoresIntel);
 
 });
